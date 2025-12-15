@@ -31,9 +31,7 @@ Be the first player to move all 7 of your pieces from the start area, through th
 
 - **Entry**:   Roll tetrahedral dice (number 1- 4). Light piece start at square 4 - 1 . Dark piece start at square 12 - 9.
 
-- **Path**: Light piece move from squares 4 - 1, 5 - 18, 16 - 15, off board. 
-
-            Dark piece move from squares 12 - 9, 5 - 18, 20 - 19, off board.
+- **Path**: Light piece move from squares 4 - 1, 5 - 18, 16 - 15, off board. Dark piece move from squares 12 - 9, 5 - 18, 20 - 19, off board.
 
 - **Blocking**: You cannot land on a square occupied by your own piece.
 - **End Turn to opponent**: After placing, capture, moving pieces.
