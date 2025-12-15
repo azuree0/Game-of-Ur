@@ -1,0 +1,7 @@
+/target
+/pkg
+node_modules
+*.wasm
+*.js.map
+.DS_Store
+Cargo.lock
