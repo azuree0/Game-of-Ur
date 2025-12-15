@@ -62,17 +62,6 @@ The board underwent significant evolution over its 3000-year history:
 - **Second Millennium BCE onwards**: The smaller block of six squares (3×2) was straightened out into a continuation of the "bridge" element, forming a continuous projecting run of eight squares, or a central run of twelve squares in total. The board still possessed 20 squares but with a different layout.
 - **Marked Squares**: Early boards featured marked or cross-cut squares (rosettes), though after 2000 BCE there was a tendency to dispense with marked squares in the corners.
 
-### Symbolic and Cultural Significance
-
-The Game of Ur reflects aspects of ancient Mesopotamian culture:
-
-- **Religious Context**: The game may have had religious or ritual significance, as suggested by its presence in royal tombs.
-- **Fortune-Telling Function**: Tablet BM 33333B reveals that the board served a dual purpose - it was used both for gameplay and for fortune-telling, with zodiac signs and predictive phrases associated with different squares.
-- **Social Activity**: Board games were important social activities in ancient Mesopotamia, bringing people together.
-- **Strategic Thinking**: The game requires both luck (dice rolls) and strategy (piece placement and movement decisions).
-- **Enduring Legacy**: The game's popularity for over three millennia demonstrates its appeal and cultural importance.
-
-
 <br>
 
 # Project Structure
