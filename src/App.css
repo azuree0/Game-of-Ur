@@ -1,0 +1,107 @@
+/* Additional React-specific styles */
+.btn-history {
+  background: #d2b48c;
+  color: #ffffff;
+}
+
+.btn-history:hover {
+  background: #c4a574;
+}
+
+.history-panel {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #667eea;
+}
+
+.history-header h2 {
+  margin: 0;
+  color: #667eea;
+  font-size: 1.5em;
+}
+
+.history-game-info {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.history-empty {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+}
+
+.history-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.history-moves h3 {
+  margin: 0 0 10px 0;
+  color: #667eea;
+  font-size: 1.2em;
+}
+
+.moves-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.move-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 5px;
+  border-left: 3px solid #667eea;
+  font-size: 0.9em;
+}
+
+.move-number {
+  font-weight: bold;
+  color: #667eea;
+  min-width: 40px;
+}
+
+.move-player {
+  font-weight: bold;
+  min-width: 60px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.move-player.light {
+  background: #efd5b6;
+  color: #191919;
+}
+
+.move-player.dark {
+  background: #7d3f12;
+  color: white;
+}
+
+.move-details {
+  flex: 1;
+  color: #666;
+}
+
+.move-dice {
+  font-weight: bold;
+  color: #9370db;
+}
