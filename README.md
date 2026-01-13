@@ -75,7 +75,6 @@ The board underwent significant evolution over its 3000-year history:
 ```
 .
 ├── Cargo.toml               # Rust project configuration       (Backend)  (Config)
-├── Cargo.lock               # Rust dependency lock file        (Backend)  (Config)
 ├── package.json             # Node.js dependencies and scripts (Frontend) (Config)
 ├── package-lock.json        # Node.js dependency lock file     (Frontend) (Config)
 ├── vite.config.js           # Vite build configuration         (Frontend) (Config)
