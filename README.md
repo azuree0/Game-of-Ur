@@ -80,11 +80,9 @@ The board underwent significant evolution over its 3000-year history:
 ├── package-lock.json        # Node.js dependency lock file     (Frontend) (Config)
 ├── vite.config.js           # Vite build configuration         (Frontend) (Config)
 ├── index.html               # HTML entry point                 (Frontend) (Static / 1 Markup)
-├── index.js                 # JavaScript entry point           (Frontend) (Source / 6 Script)
 ├── style.css                # Global styles                    (Frontend) (Static / 4 Styles)
 ├── build.bat                # Windows build script             (Build)    (Script)
 ├── build.sh                 # Unix build script                (Build)    (Script)
-├── server.py                # Python development server        (Build)    (Script)
 ├── src/
 │   ├── lib.rs               # Rust game logic (WebAssembly)    (Backend)  (Source / 2 Library)
 │   ├── main.rs              # Rust main entry point            (Backend)  (Source / 6 Script)
