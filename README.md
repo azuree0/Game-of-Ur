@@ -1,29 +1,35 @@
-<img width="1245" height="787" alt="Screenshot 2025-12-15 130113" src="https://github.com/user-attachments/assets/3adea6d7-749f-466a-bc9d-b614a54646bb" />
+<img width="1603" height="1021" alt="G" src="https://github.com/user-attachments/assets/cf139b7d-b1d1-420a-a8dc-efb65fadc1b1" />
+
+<br>
 
 # Prerequisites
 
-- Rust (latest stable version)
-wasm-pack, install with: 
-```bash
-cargo install wasm-pack
-```
+- **Node.js** (v16 or higher) - (https://nodejs.org/)
+- **Rust** (latest stable version) - (https://rustup.rs/)
+
+- **wasm-pack** - Install with:
+  ```bash
+  cargo install wasm-pack
+  ```
 
 ### Build Steps
 
-1. Build the WebAssembly module:
-```bash
-wasm-pack build --target web
-```
+1. **Build the WebAssembly module:**
+   ```bash
+   wasm-pack build --target web
+   ```
 
-2. Serve the files with a local web server (required for WebAssembly):
-```bash
-python -m http.server 8000
-```
+2. **Install Node.js dependencies:**
+   ```bash
+   npm install
+   ```
 
-3. Open browser:
-```bash
-http://localhost:8000
-```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+`http://localhost:3000` (or the port shown in the terminal)
+
 <br>
 
 # Game Rules
@@ -64,18 +70,32 @@ The board underwent significant evolution over its 3000-year history:
 
 <br>
 
-# Project Structure
+# Structure
 
 ```
 .
-├── Cargo.toml          # Rust project configuration
+├── Cargo.toml               # Rust project configuration       (Backend)  (Config)
+├── Cargo.lock               # Rust dependency lock file        (Backend)  (Config)
+├── package.json             # Node.js dependencies and scripts (Frontend) (Config)
+├── package-lock.json        # Node.js dependency lock file     (Frontend) (Config)
+├── vite.config.js           # Vite build configuration         (Frontend) (Config)
+├── index.html               # HTML entry point                 (Frontend) (Static / 1 Markup)
+├── index.js                 # JavaScript entry point           (Frontend) (Source / 6 Script)
+├── style.css                # Global styles                    (Frontend) (Static / 4 Styles)
+├── build.bat                # Windows build script             (Build)    (Script)
+├── build.sh                 # Unix build script                (Build)    (Script)
+├── server.py                # Python development server        (Build)    (Script)
 ├── src/
-│   ├── lib.rs          # Main game logic
-│   └── main.rs         # Entry point
-├── index.html          # Web interface
-├── style.css           # Styling
-├── index.js            # JavaScript bindings
-├── build.bat           # Windows build script
-├── build.sh            # Unix build script
-└── README.md           # This file
+│   ├── lib.rs               # Rust game logic (WebAssembly)    (Backend)  (Source / 2 Library)
+│   ├── main.rs              # Rust main entry point            (Backend)  (Source / 6 Script)
+│   ├── App.jsx              # React main component             (Frontend) (Source / 5 Component)
+│   ├── App.css              # Component styles                 (Frontend) (Static / 4 Styles)
+│   ├── main.jsx             # React entry point                (Frontend) (Source / 6 Script)
+│   └── database.js          # SQL History                      (Frontend) (Source / 3 Module)
+├── pkg/                     # wasm-pack generated              (Backend)
+│   ├── game_of_ur.js        # WASM bindings                    (Backend)  (Source / 3 Module)
+│   ├── game_of_ur_bg.wasm   # Compiled WebAssembly             (Backend)  (Source / 2 Library)
+│   ├── game_of_ur.d.ts      # TypeScript definitions           (Backend)  (Source / 3 Module)
+│   └── package.json         # WASM package metadata            (Backend)  (Config)
+└── README.md                # This file
 ```
