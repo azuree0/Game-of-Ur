@@ -281,17 +281,9 @@ header h1 {
     gap: 5px;
 }
 
-.left-section {
-    /* 4 columns × 3 rows (indices 0-11) */
-}
-
 .centre-section {
     /* 2 columns × 1 row (indices 12-13) */
     align-self: center;
-}
-
-.right-section {
-    /* 2 columns × 3 rows (indices 14-19) */
 }
 
 .board-row {

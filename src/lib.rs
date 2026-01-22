@@ -84,6 +84,16 @@ impl GameState {
         self.dark_pieces_start
     }
     
+    #[wasm_bindgen(getter)]
+    pub fn light_pieces_off(&self) -> u8 {
+        self.light_pieces_off
+    }
+    
+    #[wasm_bindgen(getter)]
+    pub fn dark_pieces_off(&self) -> u8 {
+        self.dark_pieces_off
+    }
+    
     pub fn get_board(&self) -> JsValue {
         // Convert board to a format JavaScript can understand
         // 0 = empty, 1 = light piece, 2 = dark piece
@@ -499,6 +509,34 @@ impl GameState {
             }
         }
         count
+    }
+    
+    #[wasm_bindgen]
+    pub fn get_status_message(&self) -> JsValue {
+        if self.game_over {
+            if let Some(winner) = self.winner {
+                let winner_name = match winner {
+                    Player::Light => "Light",
+                    Player::Dark => "Dark",
+                };
+                serde_wasm_bindgen::to_value(&format!("Game Over! {} Player Wins!", winner_name)).unwrap()
+            } else {
+                serde_wasm_bindgen::to_value(&"Game Over!").unwrap()
+            }
+        } else if self.dice_value == 0 {
+            serde_wasm_bindgen::to_value(&"").unwrap()
+        } else {
+            serde_wasm_bindgen::to_value(&"Select a piece to move").unwrap()
+        }
+    }
+    
+    #[wasm_bindgen]
+    pub fn get_player_name(&self) -> JsValue {
+        let name = match self.current_player {
+            Player::Light => "Light",
+            Player::Dark => "Dark",
+        };
+        serde_wasm_bindgen::to_value(&name).unwrap()
     }
 }
 

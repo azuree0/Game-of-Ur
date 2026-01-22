@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of Ur</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="container">
+        <header>
+            <h1>Game of Ur</h1>
+        </header>
+        
+        <div class="game-info">
+            <div class="player-info">
+                <div id="current-player" class="player-indicator">
+                    <span>Current: </span>
+                    <span id="player-name">Light</span>
+                </div>
+                <div id="dice-display">
+                    <span>Dice: </span>
+                    <span>-</span>
+                </div>
+                <div id="pieces-info">
+                    <div>Light: <span id="light-pieces-start">7</span> start, <span id="light-pieces-off">0</span> off</div>
+                    <div>Dark: <span id="dark-pieces-start">7</span> start, <span id="dark-pieces-off">0</span> off</div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="roll-dice" class="btn btn-primary">Roll Dice</button>
+                <button id="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+        
+        <div id="board" class="board"></div>
+        
+        <div id="status" class="status"></div>
+    </div>
+    <script type="module" src="index.js"></script>
 </body>
 </html>

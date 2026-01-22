@@ -1,5 +1,5 @@
 {
-  "name": "game-of-ur-react",
+  "name": "game-of-ur",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
@@ -7,13 +7,8 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sql.js": "^1.13.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
     "vite": "^7.3.1"
   }
 }
