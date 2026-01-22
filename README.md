@@ -22,7 +22,7 @@
    python -m http.server 8000
    ```
 
-  `http://localhost:8000` in your browser.
+   `http://localhost:8000` in your browser.
 
 <br>
 
