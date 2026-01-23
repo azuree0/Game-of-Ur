@@ -2,7 +2,7 @@
 
 <br>
 
-# Prerequisites
+# WebAssembly
 
 - **Rust** (latest stable version) - (https://rustup.rs/)
 - **wasm-pack** - Install with:
