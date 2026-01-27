@@ -69,22 +69,22 @@ The board underwent significant evolution over its 3000-year history:
 ```
 .
 ├── Cargo.toml               # Rust project configuration        (Rust)     (Config)
-├── index.html               # HTML entry point                  (Frontend) (Static / 1 Markup)
-├── index.js                 # Minimal JavaScript UI layer       (Frontend) (Source / 6 Script)
-├── style.css                # Global styles                     (Frontend) (Static / 4 Styles)
+├── index.html               # HTML entry point                  (Frontend) (Static /  Markup)
+├── index.js                 # Minimal JavaScript UI layer       (Frontend) (Source /  Script)
+├── style.css                # Global styles                     (Frontend) (Static /  Styles)
 ├── build.bat                # Windows build script              (Build)    (Script)
 ├── build.sh                 # Unix build script                 (Build)    (Script)
 ├── src/
-│   ├── lib.rs               # Rust game logic (WebAssembly)     (Rust)     (Source / 2 Library)
+│   ├── lib.rs               # Rust game logic (WebAssembly)     (Rust)     (Source /  Library)
 │   │                         #   - Game state management
 │   │                         #   - Move validation
 │   │                         #   - Win condition checking
 │   │                         #   - Status message generation
-│   └── main.rs              # Rust main entry point             (Rust)     (Source / 6 Script)
+│   └── main.rs              # Rust main entry point             (Rust)     (Source /  Script)
 ├── pkg/                     # wasm-pack generated               (Rust/WASM)
-│   ├── game_of_ur.js        # WASM bindings                     (Rust/WASM) (Source / 3 Module)
-│   ├── game_of_ur_bg.wasm   # Compiled WebAssembly              (Rust/WASM) (Source / 2 Library)
-│   ├── game_of_ur.d.ts      # TypeScript definitions            (Rust/WASM) (Source / 3 Module)
+│   ├── game_of_ur.js        # WASM bindings                     (Rust/WASM) (Source /  Module)
+│   ├── game_of_ur_bg.wasm   # Compiled WebAssembly              (Rust/WASM) (Source /  Library)
+│   ├── game_of_ur.d.ts      # TypeScript definitions            (Rust/WASM) (Source /  Module)
 │   └── package.json         # WASM package metadata             (Rust/WASM) (Config)
 └── README.md                # This file
 ```
